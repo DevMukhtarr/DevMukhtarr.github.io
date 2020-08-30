@@ -1,0 +1,129 @@
+@font-face {
+    font-family: cova;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+.do{
+    font-family: cova;
+    font-size: 30px;
+}
+.do{grid-area: do;}
+.need{grid-area: need;}
+.aim{grid-area: aim;}
+
+.like{
+    display: grid;
+    grid-template-areas: 
+    "do"
+    "need"
+    "aim"
+    ;
+    text-align: center;
+}
+.need{
+    font-family: Nunito;
+}
+.aim{
+    font-family: Nunito;
+    font-size: 40px
+}
+.life{grid-area: life;}
+.run{grid-area: run;}
+.ideas{
+    display: grid;
+    grid-template-areas: 
+    "life"
+    "run"
+    ;
+    text-align: center;
+}
+.life{
+    font-family: Nunito;
+}
+.run{
+    font-family: Nunito;
+    font-size: 25px;
+}
+@media screen and (max-width:720px){
+@font-face {
+        font-family: Nunito;
+        src: url('../fonts/Nunito-Bold.ttf');
+    }
+@font-face {
+    font-family: cova;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face {
+    font-family: Nunbold;
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+.secTwo{
+    max-width: 720px;
+}
+    .do{grid-area: do;}
+    .need{grid-area: need;}
+    .aim{grid-area: aim;}
+
+.like{
+    display: grid;
+    grid-template-areas: 
+    "do"
+    "need"
+    "aim"
+    ;
+    max-width: 720px;
+
+}
+.do{
+    text-align: center;
+    position: relative;
+    font-family: cova;
+    font-size: 50px;
+    max-width: 720px;
+}
+.need{
+    text-align: center;
+    position: relative;
+    font-family: Nunbold;
+    font-size: 30px;
+    max-width: 720px;
+}
+.aim{ 
+    text-align: center;
+    position: relative;
+    font-family: Nunbold;
+    font-size: 30px; 
+    max-width: 720px;
+}
+    .life{grid-area: life;}
+    .run{grid-area: run;}
+
+.ideas{
+    display: grid;
+    grid-template-areas: 
+    "life"
+    "run"
+    ;
+    position: relative;
+    max-width: 720px;
+}
+.life{
+    text-align: center;
+    font-family: cova;
+    font-size: 30px;
+    position: relative;
+    max-width: 720px;
+}
+.run{
+    grid-row: 2/2;
+    grid-column: 1;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 30px;
+    position: relative;
+    max-width: 720px;
+}
+}
