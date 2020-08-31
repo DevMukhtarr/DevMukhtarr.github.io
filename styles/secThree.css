@@ -63,7 +63,10 @@
     width: 30px;
     margin-right: 20px;
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
+    .secThree{
+        min-width: 100px;
+    }
 @font-face {
     font-family: Nunito;
     src: url('../fonts/Nunito-Bold.ttf');
@@ -89,6 +92,7 @@ src: url('../fonts/Pacifico-Regular.ttf');
     font-family: cova;
     font-size: 30px;
     position: relative;;
+    min-width: 100px;
 }
 .love{
     font-family: Nunito;
@@ -109,6 +113,7 @@ src: url('../fonts/Pacifico-Regular.ttf');
     border-top-color: goldenrod;
     border-bottom-color: silver;
     background-color:rgba(128, 128, 128, 0.692);
+    min-width: 100px;
 }
 .mail{
     border: 2px;
