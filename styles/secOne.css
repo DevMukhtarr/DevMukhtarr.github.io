@@ -86,6 +86,7 @@ li a{
         display: grid;
         min-width: 100px;
         text-align: center;
+        background-image: linear-gradient(to right,silver,rgba(154, 129, 220, 0.2));
     }
     .hac{
         display: grid;
@@ -173,5 +174,8 @@ li a{
         height: 300px;
         width: 300px;
         text-align: center;
+        opacity: 0.5;
+        border: 2px double silver;
+        border-radius: 12px;
     }
 }
