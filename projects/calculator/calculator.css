@@ -1,0 +1,328 @@
+@font-face{
+    font-family: Nunito;
+    src: url('Nunito-Regular.ttf');
+}
+body{
+    flex: 1;
+    background-image: linear-gradient(to right, black, silver);
+}
+.calculator_keys{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 5;
+    grid-template-columns: 4;
+    grid-gap: 2px;
+
+}
+
+.screen{
+    width: 150px;
+    height: 70px;
+    position: relative;
+    left: 43%;
+    background-color: white;
+    text-align: right;
+    font-family: Nunito;
+    margin-bottom: 10px;
+}
+.c{
+    grid-row: 4;
+    grid-column: 3/3;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.divide{
+    grid-row: 1;
+    grid-column: 4/4;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.seven{
+    grid-row: 1;
+    grid-column: 1/1;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.eight{
+    grid-row: 1;
+    grid-column: 2/2;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.nine{
+    grid-row: 1;
+    grid-column: 3/3;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.multi{
+    grid-row: 2;
+    grid-column: 4/4;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.four{
+    grid-row: 2;
+    grid-column: 1/1;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.five{
+    grid-row: 2;
+    grid-column: 2/2;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.six{
+    grid-row: 2;
+    grid-column: 3/3;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.minus{
+    grid-row: 3;
+    grid-column: 4/4;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.one{
+    grid-row: 3;
+    grid-column: 1/1;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.two{
+    grid-row: 3;
+    grid-column: 2/2;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.three{
+    grid-row: 3;
+    grid-column: 3/3;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.plus{
+    grid-row: 4/7;
+    grid-column: 4/4;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.zero{
+    grid-row: 4;
+    grid-column: 1/1;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.dot{
+    grid-row: 4;
+    grid-column: 2/2;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+.equal{
+    grid-row: 6;
+    grid-column: 1/4;
+    border: 2px double silver;
+    background-color: teal;
+    font-family: Nunito;
+    font-size: 25px;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 750px){
+    body{
+        flex: 1;
+        background-image: linear-gradient(to right, black, silver);
+    }
+    .calculator_keys{
+        text-align: center;
+        display: grid;
+        grid-template-rows: 5;
+        grid-template-columns: 4;
+        grid-gap: 2px;
+    
+    }
+    
+    .screen{
+        width: 150px;
+        height: 70px;
+        position: relative;
+        left: 25%;
+        background-color: white;
+        text-align: right;
+        font-family: Nunito;
+        margin-bottom: 10px;
+    }
+    .c{
+        grid-row: 4;
+        grid-column: 3/3;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .divide{
+        grid-row: 1;
+        grid-column: 4/4;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .seven{
+        grid-row: 1;
+        grid-column: 1/1;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .eight{
+        grid-row: 1;
+        grid-column: 2/2;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .nine{
+        grid-row: 1;
+        grid-column: 3/3;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .multi{
+        grid-row: 2;
+        grid-column: 4/4;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .four{
+        grid-row: 2;
+        grid-column: 1/1;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .five{
+        grid-row: 2;
+        grid-column: 2/2;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .six{
+        grid-row: 2;
+        grid-column: 3/3;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .minus{
+        grid-row: 3;
+        grid-column: 4/4;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .one{
+        grid-row: 3;
+        grid-column: 1/1;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .two{
+        grid-row: 3;
+        grid-column: 2/2;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .three{
+        grid-row: 3;
+        grid-column: 3/3;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .plus{
+        grid-row: 4/7;
+        grid-column: 4/4;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .zero{
+        grid-row: 4;
+        grid-column: 1/1;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .dot{
+        grid-row: 4;
+        grid-column: 2/2;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+    .equal{
+        grid-row: 6;
+        grid-column: 1/4;
+        border: 2px double silver;
+        background-color: teal;
+        font-family: Nunito;
+        font-size: 25px;
+    }
+}
