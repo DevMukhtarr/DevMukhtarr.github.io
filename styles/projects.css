@@ -1,0 +1,18 @@
+body{
+    background-image: linear-gradient(to right, hsl(300, 100%, 25%, 0.6), silver) ;
+}
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+.projects{
+    text-align: center;
+    font-family: Nunito;
+    color: khaki;
+}
+.image{
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+    border: 2px double olivedrab;
+}
