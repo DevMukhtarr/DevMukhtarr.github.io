@@ -104,7 +104,7 @@ src: url('../fonts/Pacifico-Regular.ttf');
     text-align: center;
     position: relative;;
 }
-.cme{
+a.cme{
     border: 2px double;
     border-radius: 12px;
     text-align: center;
@@ -114,6 +114,7 @@ src: url('../fonts/Pacifico-Regular.ttf');
     border-bottom-color: silver;
     background-color:rgba(128, 128, 128, 0.692);
     min-width: 100px;
+    color: teal;
 }
 .mail{
     border: 2px;
