@@ -63,6 +63,11 @@ li a{
 .dev-p{
     text-align: center;
 }
+.dev{
+        opacity: 0.5;
+        border: 2px double silver;
+        border-radius: 12px;
+}
 .name{
     font-family: cova;
     font-size: 30px;
