@@ -77,6 +77,7 @@ li a{
     }
     li a{
         text-decoration-line: none;
+        color: teal;
     }
     @font-face {
         font-family: Nunito;
