@@ -63,6 +63,9 @@
     width: 30px;
     margin-right: 20px;
 }
+a.cme{
+    color: teal;
+}
 @media screen and (max-width: 750px) {
     .secThree{
         min-width: 100px;
