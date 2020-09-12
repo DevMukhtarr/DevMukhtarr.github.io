@@ -10,4 +10,13 @@ typeForIntro = () =>{
         setTimeout(typeForIntro, 100)
 }
 };
+
+/*Dark Mode*/
+darkMode = () =>{
+    let body = document.body;
+    let moon = document.getElementById('moon');
+    moon.classList.toggle('moon-change');
+    body.classList.toggle('dark-mode')
+
+}
 typeForIntro();
