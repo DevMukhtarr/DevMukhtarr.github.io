@@ -1,0 +1,39 @@
+body{
+    flex: 1;
+}
+.moon{
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    border-left: 11px solid rgb(35, 35, 35);
+    grid-row: 1/1;
+    border-radius: 100%;
+    transform: rotate(190deg);
+}
+.moon-change{
+    border-left: 11px solid white;
+    color: white;
+}
+.dark-mode{
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+@media screen and (max-width: 750px){
+    .moon{
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+        border-left: 11px solid rgb(35, 35, 35);
+        grid-row: 1/1;
+        border-radius: 100%;
+        transform: rotate(180deg);
+    }
+    .moon-change{
+        border-left: 11px solid white;
+        color: white;
+    }
+    .dark-mode{
+        background-image: linear-gradient(rgb(35, 35, 35)50%, rgb(35, 35, 35)50%) ;
+        color: white;
+    }
+}
