@@ -6,83 +6,80 @@
     font-family: cova;
     src: url('../fonts/Pacifico-Regular.ttf');
 }
-li a{
-    text-decoration-line: none;
-    color: teal;
-}
-.hac{
+.image{grid-area: image;}
+.about{grid-area: about;}
+.projects{grid-area: projects;}
+.contact{grid-area: contact;}
+.resume{grid-area: resume;}
+.moon{grid-area: moon;}
+
+
+nav{
+    margin-top: 2.5%;
     display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: 5;
-    font-family: Nunito;
-    min-width: 100px;
+    grid-template-areas: 
+    'image about projects contact resume moon'
+    ;
 }
-.about{
-    grid-row: 1;
-    grid-column: 1/1;
-    list-style-type: none;
+*{
+    margin: 0;
+    padding: 0;
 }
-.project{
-    grid-row: 1;
-    grid-column: 2/2;
-    list-style-type: none;
+body{
+    text-align: center;
 }
-.contact{
-    grid-row: 1;
-    grid-column: 3/3;
-    list-style-type: none;
-}
-.resume{
-    grid-row: 1;
-    grid-column: 4/4;
-    list-style-type: none;
-}
-.Home_Image{
-    border: 2px double gold;
-    margin: 2px;
-    padding: 2px;
-    margin-top: 10px;
-    grid-row: 2;
-    grid-column: 3/3;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+header{
+    height: 100px;
+    background: rgba(38, 38, 38, 0.678);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
 }
 
-    .name{grid-area: name;}
-    .desg{grid-area: desg;}
-.np{
-   display: grid;
-   grid-template-areas: 
-   "name"
-   "desg"
-   ;
-   position: relative;
-   text-align: center;
+@font-face{
+    font-family: Nunito;
+    src: url(Nunito-Bold.ttf);
 }
+
+
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    position: relative;
+    bottom: 22%;
+}  
+nav a{
+    text-decoration: none;
+    font-family: Nunito;
+    color: white;
+}
+.np{
+    padding-top: 12%;
+}
+    
 .dev-p{
     text-align: center;
+}
+.name{
+    font-family: cova;
+    font-size: 30px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+.desg{
+    font-family: Nunito;
+    font-family: 27px;
 }
 .dev{
         opacity: 0.5;
         border: 2px double silver;
         border-radius: 12px;
 }
-.name{
-    font-family: cova;
-    font-size: 30px;
-}
-.desg{
-    font-family: Nunito;
-    font-family: 27px;
-}
 @media screen and (max-width:720px){
+
     .secOne{
         min-width: 100px;
-    }
-    li a{
-        text-decoration-line: none;
-        color: teal;
     }
     @font-face {
         font-family: Nunito;
@@ -91,79 +88,57 @@ li a{
     body{
         display: grid;
         min-width: 100px;
-        text-align: center;
+        text-align: center;  /*new*/
         background-image: linear-gradient(to right,silver,rgba(154, 129, 220, 0.2));
+         /*new*/
     }
-    .hac{
-        display: grid;
-        grid-template-rows: 1;
-        grid-template-columns: 5;
-        list-style-type: none;
-        grid-gap: 10px;
+    
+    nav a{
+        text-decoration: none;
         font-family: Nunito;
-        font-size: 10px;
-        min-width: 100px;
+        color: white;
+        font-size: 12px;
     }
-    .Home_Image{
-        grid-row: 1/1;
-        grid-column: 1/2;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        padding: 1px;
-        margin: 1px;
-        border: 2px double goldenrod;
-    }
-    .about{
-        grid-row: 1/1;
-        grid-column: 2/3;
-        margin: 2px;
-        border: 2px;
-        padding: 2px;
-        margin-top: 20px;
-    }
-    .project{
-        grid-row: 1/1;
-        grid-column: 3/4;
-        margin: 2px;
-        border: 2px;
-        padding: 2px;
-        margin-top: 20px;
-        
-    }
-    .contact{
-        grid-row: 1/1;
-        grid-column: 4/5;
-        margin: 2px;
-        border: 2px;
-        padding: 2px;
-        margin-top: 20px;
-    }
-    .resume{
-        grid-row: 1/1;
-        grid-column: 5/6;
-        margin: 2px;
-        border: 2px;
-        border-radius: 15px;
-        padding: 2px;
-        margin-top: 20px;
-    }
+nav{
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: 
+    'image about projects contact resume moon'
+    ;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+header{
+    height: 100px;
+    background: rgb(38, 38, 38, 0.678);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
 
-    /* The name, picture and what i do part */
-    .name {grid-area: name;}
-    .desg {grid-area: desg;}
-    .dev-p {grid-area: dev-p;}
+@font-face{
+    font-family: Nunito;
+    src: url(Nunito-Bold.ttf);
+}
 
-    .np{
-        display: grid;
-        grid-template-areas: 
-    "name"
-    "desg"
-    "dev-p"
-   ;
-   position: relative;
-   text-align: center;
-    }
+
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    position: relative;
+    bottom: 22%;
+} 
+.np{
+    padding-top: 30%;
+}
+
     
     
     .name{
