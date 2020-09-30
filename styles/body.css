@@ -2,16 +2,14 @@ body{
     flex: 1;
 }
 .moon{
-    margin-top: 2px;
-    width: 30px;
     height: 30px;
-    border-left: 11px solid rgb(35, 35, 35);
-    grid-row: 1/1;
+    width: 30px;
     border-radius: 100%;
-    transform: rotate(190deg);
+    border-left: 6px solid black;
+    transform: rotate(220deg);
 }
 .moon-change{
-    border-left: 11px solid white;
+    border-left: 6px solid white;
     color: white;
 }
 .dark-mode{
@@ -20,16 +18,14 @@ body{
 }
 @media screen and (max-width: 750px){
     .moon{
-        margin-top: 15px;
-        width: 30px;
         height: 30px;
-        border-left: 11px solid rgb(35, 35, 35);
-        grid-row: 1/1;
+        width: 30px;
         border-radius: 100%;
-        transform: rotate(180deg);
+        border-left: 6px solid black;
+        transform: rotate(220deg);
     }
     .moon-change{
-        border-left: 11px solid white;
+        border-left: 6px solid white;
         color: white;
     }
     .dark-mode{
