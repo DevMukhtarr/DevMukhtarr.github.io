@@ -59,6 +59,17 @@ handleComputerPlay = () =>{
 
 }
 
+//this function is called is the game is draw
+handleDraw = () => {
+    let status = document.getElementById('gamestatus')
+
+    let draw = !gameState.includes('');
+
+        if(won === false & draw){
+             status.innerHTML = "It's a draw";
+             }
+}
+
 //this function is called when there's a win
 handleWin = () =>{
         for(let i = 0; i <= 7; i++){
@@ -87,17 +98,6 @@ handleWin = () =>{
         } 
 }
 
-//this function is called is the game is draw
-handleDraw = () => {
-    let status = document.getElementById('gamestatus')
-
-    let draw = !gameState.includes('');
-
-        if(won === false & draw){
-             status.innerHTML = "It's a draw";
-             }
-}
-
 //this function restarts the game
 handleRestartGame = () =>{
     let restart = document.getElementById('game--restart');
@@ -114,9 +114,6 @@ handleRestartGame = () =>{
         status.innerHTML = ''
     }
 
-handleEmptyBoxes = () =>{
-    
-}
 }
 
 document.querySelectorAll('.box').forEach(cell => cell.addEventListener('click', handleCellClick));

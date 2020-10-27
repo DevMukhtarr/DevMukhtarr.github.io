@@ -114,7 +114,7 @@ nav{
 body{
     text-align: center;
 }
-header{
+ header{
     height: 100px;
     background: rgb(38, 38, 38, 0.678);
     width: 100%;
@@ -122,25 +122,22 @@ header{
     position: fixed;
 }
 
-@font-face{
+    @font-face{
     font-family: Nunito;
     src: url(Nunito-Bold.ttf);
 }
 
 
-.image{
+  .image{
     height: 50px;
     width: 50px;
     border-radius: 20%;
     position: relative;
     bottom: 22%;
 } 
-.np{
+  .np{
     padding-top: 30%;
 }
-
-    
-    
     .name{
         font-family: Nunito;
         text-align: center;
