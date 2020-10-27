@@ -1,0 +1,35 @@
+
+@font-face{
+    font-family: Nunito;
+    src: url('Nunito-Bold.ttf');
+}
+marquee{
+    font-family: Nunito;
+}
+body {
+    flex: 1;
+    background-image: linear-gradient(to left, rgba(123, 178, 234),gold);
+}
+.text{
+    border: 2px double gold;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-family: Nunito;
+}
+.submit{
+    margin: 2px;
+    border: 2px ;
+    padding: 2px;
+    height: 30px;
+    width: 70px;
+    background-color: goldenrod;
+    border-radius: 12px;
+}
+.text{
+    height: 30px;
+    width: 100px;
+}
+.init{
+    text-align: center;
+    font-family: Nunito;
+}

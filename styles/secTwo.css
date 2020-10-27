@@ -48,6 +48,9 @@
     font-size: 25px;
 }
 @media screen and (max-width:720px){
+    .secTwo{
+        min-width: 100px;
+    }
 @font-face {
         font-family: Nunito;
         src: url('../fonts/Nunito-Bold.ttf');
@@ -74,7 +77,7 @@
     "need"
     "aim"
     ;
-    max-width: 720px;
+    min-width: 100px;
 
 }
 .do{
@@ -108,7 +111,7 @@
     "run"
     ;
     position: relative;
-    max-width: 720px;
+    min-width: 100px;
 }
 .life{
     text-align: center;

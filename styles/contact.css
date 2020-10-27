@@ -1,0 +1,39 @@
+.accounts{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.githubp{
+    border: 2px;
+    border-radius: 12px;
+    height: 70px;
+    width: 80px;
+    
+}
+.twitterp{
+    border-radius: 12px;
+    height: 60px;
+    width: 80px;
+
+}
+
+@media screen and (max-width:720px){
+.accounts{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.githubp{
+    border: 2px;
+    border-radius: 12px;
+    height: 70px;
+    width: 80px;
+    
+}
+.twitterp{
+    border-radius: 12px;
+    height: 60px;
+    width: 80px;
+
+}
+}
