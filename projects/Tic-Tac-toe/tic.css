@@ -1,36 +1,52 @@
-section{
-    text-align: center;
-}
-.box{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 306px;
-    margin: 50px auto;
-}
-body{
-    background-color: cadetblue;
-}
-.cell {
-    font-family: "Permanent Marker", cursive;
-    width: 100px;
+td{
+    border: 2px solid #333;
     height: 100px;
-    box-shadow: 0 0 0 1px peru;
-    border: 1px solid #333333;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Comic Sans Ms', cursive, sans-serif;
+    font-size: 70px;
     cursor: pointer;
-    line-height: 100px;
-    font-size: 60px;
 }
-.cell:hover{
-    background-color: rgb(204, 144, 144);
+table{
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 50px;
+}
+table tr:first-child td{
+    border-top: 0;
+}
+table tr:last-child td{
+    border-bottom: 0;
+}
+table tr td:first-child{
+    border-left: 0;
+}
+table tr td:last-child{
+    border-right: 0;
+}
+.endgame{
+    width: 200px;
+    position: relative;
+    top: 350px;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-size: 2em;
 }
 button{
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: transparent;
-    border: 2px solid goldenrod;
+    border: 0;
+    background-color: lightseagreen;
+    border-radius: 2%;
 }
 button:hover{
-    box-shadow: 5px 5px 15px black;
-    border: 2px solid transparent;
-    border-radius: 2px;
+    border: 2px solid black;
+    border-radius: 5%;
 }

@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-tac-toe</title>
-    <link rel="stylesheet" href="tic.css" type="text/css" />
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="tic.css">
 </head>
 <body>
-    <section>
-        <div class="box" id="box">
-            <div data-cell-index = "0" class="cell" id="cell"></div>
-            <div data-cell-index = "1" class="cell" id="cell"></div>
-            <div data-cell-index = "2" class="cell" id="cell"></div>
-            <div data-cell-index = "3" class="cell" id="cell"></div>
-            <div data-cell-index = "4" class="cell" id="cell"></div>
-            <div data-cell-index = "5" class="cell" id="cell"></div>
-            <div data-cell-index = "6" class="cell" id="cell"></div>
-            <div data-cell-index = "7" class="cell" id="cell"></div>
-            <div data-cell-index = "8" class="cell" id="cell"></div>
-        </div>
-        <button class="game--restart" id="game--restart">Restart Game</button>
-        <h2 class="gamestatus" id="gamestatus"</h2></h2>
-    </section>
+    <table>
+        <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+    <div class="endgame">
+        <div class="text"></div>
+        <button onClick="startGame()">Replay</button>
+    </div>
+    <script src="tic.js"></script>
 </body>
-<script src="tic.js"></script>
 </html>
