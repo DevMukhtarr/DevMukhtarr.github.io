@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Nunito;
+    src: url('fonts/Nunito-Bold.ttf');
+}
+body{
+    transition: background 1.0s linear;
+}
+body.dark{
+    background-color: rgb(41, 39, 39);
+}
+.animated-picture-cover{
+    flex: 10;
+}
+.animated-picture{
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 1px double gold;
+}
+.menu{
+    flex: 1;
+    position: relative;
+    top: 25%;
+    justify-content: space-between;
+}
+.moon-body{
+    margin-top: 0.5%;
+    position: relative;
+    flex: 1;
+ } 
+ .wrapper--mobile{
+     display: none;
+ }
+label{ 
+    width: 50px;
+    height: 26px;
+    background-color: black;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    top: 25%;
+    transform: scale(1.5);
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.ball{
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 100%;
+    transition: transform 0.2s linear;
+}
+@media only screen and (max-width:2100px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper{
+        display: none;
+    }
+    .animated-picture{
+        transform: scale(0.7);
+    }
+    .moon-container{
+        transform: scale(0.8);
+    }
+    .wrapper--mobile{
+        display: flex;
+        background-color: black;
+    }
+    .menu--items--mobile{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       left: 0;
+       right: 0;
+       height: 100vh;
+       width: 50%;
+       background-color: black;
+       flex-direction: column;
+       line-height: 90px;
+       transform: translateX(-100%);
+       transition: transform 0.2s linear;
+    }
+    .fa-sun-o{
+        color: gold;
+        position: relative;
+    }
+    .fa-moon-o{
+        color: gold;
+        position: relative;
+    }
+   .menu--items--mobile.active{
+        transition: transform 0.2s linear;
+        transform: translateX(0%);
+   }
+   .menu--items--mobile a{
+       text-decoration: none;
+       color: white;
+       font-size: 27px;
+       text-transform: uppercase;
+   }
+   .menu--items--mobile a:hover{
+       color: orange;
+   }
+   .fa-bars{
+       color: #fff;
+   }
+   .checkbox:checked ~ label .ball{
+    background-color: white;
+    transform: translateX(24px);
+    color: white;
+}
+label{
+    position: relative;
+}
+#ball{
+    transform: translateX(0px);
+}
+#ball.move{
+    transform: translateX(24px);
+}
+}

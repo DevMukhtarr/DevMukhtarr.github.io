@@ -16,6 +16,9 @@ body {
     margin-bottom: 10px;
     font-family: Nunito;
 }
+.p--first{
+    font-family: Nunito;
+}
 .submit{
     margin: 2px;
     border: 2px ;

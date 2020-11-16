@@ -1,64 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styles\body.css" type="text/css" />
-    <link rel="stylesheet" href="styles\secOne.css" type="text/css" />
-    <link rel="stylesheet" href="styles\secTwo.css" type="text/css" />
-    <link rel="stylesheet" href="styles\secThree.css" type="text/css" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/body.css">
 </head>
 <body>
-    <!--Section 1-->
-    <section class="secOne">
-        <header class="head">
-            <div class="wrapper">
-                <nav>
-                    <img class="image" src="images\image_1.png"  alt="my picture">
-                    <a class="about" href="navbar\about.html">/About</a>
-                    <a href="navbar\projects.html" class="projects" href="#about">/Projects</a>
-                    <a href="navbar\contact.html" class="contact" href="#about">/Contact</a>
-                    <a class="resume" href="navbar\resume.html">/Resume</a>
-                    <div class="moon" id="moon" onclick="darkMode()"></div>
-                </nav>
-            </div>
-        </header>
-                <div class="np">
-                <h1 id="name" class="name"></h1>
-                <p class="desg">I design and code fascinating, simple things And i love❤️ what i do</p>
-                <div class="dev-p"><img class="dev" src="images\Web-Developer.jpg"  alt="Developer"/></div>
-                </div> 
-    </section>
-    
-
-    <!--Section 2-->
-    <section class="secTwo">
-            <div class="like">
-               <h1 class="do">What i do</h1>
-               <h2 class="need">Design your need</h2>
-               <p class="aim">I can help you design your choice of website, sending your desired message is my utmost desire.</p>
-            </div>
-            <div class="ideas">
-                <h2 class="life">Bring your ideas to life</h2>
-                <p class="run">As a developer, i can help you bring your website ideas to life on-time and on budget which will run across devices using latest technologies available.</p>
-            </div>
-    </section>
-
-
-
-    <!--Section 3-->
-    <section class="secThree">
-        <div class="reach">
-        <h1 class="rme">Reach Me</h1>
-        <h2 class="love">Love coding like me ?</h2>
-        <h2 class="togeda">You can get in touch with me let's code together</h2>
+    <!-- This is the header section for the General view -->
+    <header>
+        <!-- General view -->
+        <div class="wrapper--mobile">
+            <div class="animated-picture-cover"><img class="animated-picture" src="img/image_1.png" alt="animated_picture"></div>
+                <div class="moon--and--menu">
+                    <div class="moon-body">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="moon-container">
+                            <i class="fa fa-moon-o"></i>
+                            <i class="fa fa-sun-o"></i> 
+                            <div class="ball" id="ball"></div>
+                        </label>
+                    </div>
+                    <div class="menu">
+                        <i class="fa fa-bars" id="toggle"></i>
+                        <div class="menu--items--mobile" id="menu--items--mobile">
+                            <a href="Navbar\about.html">About</a>
+                            <a href="Navbar\projects.html">Projects</a>
+                            <a href="Navbar\contact.html">Contact</a>
+                            <a href="Navbar\Abdulfatai's Resume.pdf">Resume</a>
+                        </div>
+                    </div>
+                </div>
         </div>
-        <div class="contact-me">
-        <a href="mailto:mukhtarabdulfatai@gmail.com" style="text-decoration-line: none; text-decoration-color: none;" class="cme">Contact me <img class="mail" src="images\mailbox.jpg"></a>
-        </div>
-        <h4>Copyright © 2020| Design by Mukhtar</h4>
-    </section>
+    </header>
+    <!-- This is the main body section -->
+    <div class="body--about">
+        <h1 class="my-intro"></h1>
+    </div>
+    <script src="test.js"></script>
 </body>
-<script src="portfolio.js"></script>
 </html>

@@ -1,39 +1,69 @@
-.accounts{
-    text-align: center;
+@font-face{
+    font-family: Goldman;
+    src: url('../fonts/Goldman-Regular.ttf');
+}
+div a{
+    font-family: Goldman;
+    font-size: 20px;
+    font-weight: 100px;
+    color: rgb(214, 207, 207);
+    text-decoration: none;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+div a:hover{
+    color: grey;
+}
+.contacts{
+    /* text-align: center; */
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    justify-content: space-evenly;
     position: relative;
-    top: 50%;
+    top: 20px;
 }
-.githubp{
-    border: 2px;
-    border-radius: 12px;
-    height: 70px;
-    width: 80px;
-    
+.contacts a i{
+    color: white;
+    background-color: black;
+    padding: 60%;
+    border-radius: 2px;
 }
-.twitterp{
-    border-radius: 12px;
-    height: 60px;
-    width: 80px;
-
+.fa-twitter{
+    transform: scale(2.5);
 }
-
-@media screen and (max-width:720px){
-.accounts{
-    text-align: center;
-    position: relative;
-    top: 50%;
+.fa-linkedin{
+    transform: scale(2.5);
 }
-.githubp{
-    border: 2px;
-    border-radius: 12px;
-    height: 70px;
-    width: 80px;
-    
+.fa-github{
+    transform: scale(2.5);
 }
-.twitterp{
-    border-radius: 12px;
-    height: 60px;
-    width: 80px;
-
+.contacts a i:hover{
+    color: gold;
 }
+@media only screen and (max-width:1100px){
+    div a{
+        font-size: 10px;
+        font-weight: 100px;
+    }
+    .contacts a{
+        color: black;
+        padding: 5%;
+        margin: 5%;
+        border: 5%;
+    }
+    .contacts{
+        text-align: center;
+        position: relative;
+        top: 150px;
+    }
+    .fa-twitter{
+        transform: scale(3.0);
+    }
+    .fa-linkedin{
+        transform: scale(3.0);
+    }
+    .fa-github{
+        transform: scale(3.0)
+    }
 }

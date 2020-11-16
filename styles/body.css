@@ -1,35 +1,32 @@
-body{
-    flex: 1;
+@font-face{
+    font-family: Goldman;
+    src: url('../fonts/Goldman-Regular.ttf');
 }
-.moon{
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    border-left: 6px solid black;
-    transform: rotate(220deg);
+.body--about{
+    display: flex;
 }
-.moon-change{
-    border-left: 6px solid white;
+.my-intro{
+    position: relative;
+    font-family: Goldman;
+    width: 50px;
+    left: 80%;
+}
+.color-change{
     color: white;
 }
-.dark-mode{
-    background-color: rgb(35, 35, 35);
-    color: white;
+@media only screen and (max-width:280px){
+    .my-intro{
+        position: relative;
+        font-family: Goldman;
+        width: 50px;
+        left: 38%;
+    }
 }
-@media screen and (max-width: 750px){
-    .moon{
-        height: 30px;
-        width: 30px;
-        border-radius: 100%;
-        border-left: 6px solid black;
-        transform: rotate(220deg);
-    }
-    .moon-change{
-        border-left: 6px solid white;
-        color: white;
-    }
-    .dark-mode{
-        background-image: linear-gradient(rgb(35, 35, 35)50%, rgb(35, 35, 35)50%) ;
-        color: white;
+@media only screen and (max-width:800px){
+    .my-intro{
+        position: relative;
+        font-family: Goldman;
+        width: 50px;
+        left: 47%;
     }
 }

@@ -1,24 +1,28 @@
 body{
-    background-color: rgb(0, 11, 44);
+    background-color: white;
 }
-@font-face {
+div div{
+    position: relative;
+    left: 5%;
+    width: 80%;
+    color: black
+}
+@font-face{
     font-family: Nunito;
     src: url('../fonts/Nunito-Bold.ttf');
+}
+.text{
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 100;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
 }
 @font-face{
     font-family: Goldman;
     src: url('../fonts/Goldman-Regular.ttf');
-}
-.projects{
-    text-align: center;
-    font-family: Nunito;
-    color: whitesmoke;
-}
-.image{
-    height: 250px;
-    width: 250px;
-    border-radius: 12px;
-    border: 2px double olivedrab;
 }
 div a{
     font-family: Goldman;
@@ -30,7 +34,7 @@ div a{
     margin-right: 5px;
 }
 div a:hover{
-    color: grey;
+    color: rgb(65, 35, 35);
 }
 @media only screen and (max-width:1100px){
     div a{
