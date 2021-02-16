@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles\style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/body.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles\style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/body.css">
 </head>
 <body>
     <!-- This is the header section for the General view -->
@@ -14,17 +14,8 @@
         <!-- General view -->
         <div class="wrapper--mobile">
             <div class="animated-picture-cover"><img class="animated-picture" src="img/image_1.png" alt="animated_picture"></div>
-                <div class="moon--and--menu">
-                    <div class="moon-body">
-                        <input type="checkbox" class="checkbox" id="checkbox">
-                        <label for="checkbox" class="moon-container">
-                            <i class="fa fa-moon-o"></i>
-                            <i class="fa fa-sun-o"></i> 
-                            <div class="ball" id="ball"></div>
-                        </label>
-                    </div>
                     <div class="menu">
-                        <i class="fa fa-bars" id="toggle"></i>
+                        <i class="fa fa-bars" ></i>
                         <div class="menu--items--mobile" id="menu--items--mobile">
                             <a href="navbar\about.html">About</a>
                             <a href="navbar\projects.html">Projects</a>
@@ -33,12 +24,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </header>
+        <!-- This is the main body section -->
+        <div id="container">
+            <div id="monitor">
+              <div id="monitorscreen"><p class="my-intro"></p></div>
+            </div>
         </div>
-    </header>
-    <!-- This is the main body section -->
-    <div class="body--about">
-        <h1 class="my-intro"></h1>
-    </div>
+        <!-- this is the footer section -->
+    <footer>
+        <div class="copyright">
+            <i class="fa fa-copyright"></i>
+            <p> 2021 Mukhtar's Portfolio</p>
+        </div>
+    </footer>
     <script src="test.js"></script>
 </body>
 </html>

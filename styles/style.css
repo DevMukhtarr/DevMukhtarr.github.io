@@ -31,39 +31,6 @@ body.dark{
     top: 25%;
     justify-content: space-between;
 }
-.moon-body{
-    margin-top: 0.5%;
-    position: relative;
-    flex: 1;
- } 
- .wrapper--mobile{
-     display: none;
- }
-label{ 
-    width: 50px;
-    height: 26px;
-    background-color: black;
-    border-radius: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    top: 25%;
-    transform: scale(1.5);
-}
-.checkbox{
-    opacity: 0;
-    position: absolute;
-}
-.ball{
-    height: 22px;
-    width: 22px;
-    background-color: #fff;
-    position: absolute;
-    border-radius: 100%;
-    transition: transform 0.2s linear;
-}
 @media only screen and (max-width:2100px){
     *{
         margin: 0;
@@ -96,14 +63,7 @@ label{
        line-height: 90px;
        transform: translateX(-100%);
        transition: transform 0.2s linear;
-    }
-    .fa-sun-o{
-        color: gold;
-        position: relative;
-    }
-    .fa-moon-o{
-        color: gold;
-        position: relative;
+       z-index: 2;
     }
    .menu--items--mobile.active{
         transition: transform 0.2s linear;
@@ -120,19 +80,9 @@ label{
    }
    .fa-bars{
        color: #fff;
+       position: relative;
+       top: 25px;
+       border: 1px solid white;
+       padding: 5px;
    }
-   .checkbox:checked ~ label .ball{
-    background-color: white;
-    transform: translateX(24px);
-    color: white;
-}
-label{
-    position: relative;
-}
-#ball{
-    transform: translateX(0px);
-}
-#ball.move{
-    transform: translateX(24px);
-}
 }

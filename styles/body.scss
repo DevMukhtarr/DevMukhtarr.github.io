@@ -1,0 +1,118 @@
+@font-face{
+  font-family: Goldman;
+  src: url('../fonts/Goldman-Regular.ttf');
+}
+
+body {
+    background-color: #222;
+  }
+  
+  #container {
+    max-width: 1024px;
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  #monitor {
+      background: #000; 
+      margin: 5%;
+      padding: 2% 2% 4% 2%; 
+      border-radius: 10px; 
+      border-bottom-left-radius: 50% 2%; 
+      border-bottom-right-radius: 50% 2%; 
+      transition: margin-right 1s;
+  }
+  
+  #monitor:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: silver; 
+      border-radius: 50%; 
+      box-shadow: 0 0 3px 0 white; 
+  }
+  
+  #monitorscreen {
+      position: relative;
+    background-color: white;
+      background-size: cover; 
+      background-position: top center;
+      padding-bottom: 56.25%; 
+      position: relative;
+  }
+
+  @media all and (max-width: 960px) {
+    #container {
+        max-width: 1024px;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+  }
+  
+  @media all and (min-width: 960px) {
+      #monitor {
+          -webkit-animation: tvflicker .2s infinite alternate; 
+          -moz-animation:    tvflicker .5s infinite alternate; 
+          -o-animation:      tvflicker .5s infinite alternate; 
+          animation:         tvflicker .5s infinite alternate; 
+      }
+  
+      @-webkit-keyframes tvflicker {
+        0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+        100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+      }
+      @-moz-keyframes tvflicker {
+        0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+        100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+      }
+      @-o-keyframes tvflicker {
+        0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+        100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+      }
+      @keyframes tvflicker {
+        0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+        100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+      }
+  }
+  //the television and it's container
+  #container{
+    #monitor{
+      #monitorscreen{
+        text-align: center;
+        p{
+          font-family: Goldman;
+          color: rgb(53, 26, 2);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 120%;
+        }
+      }
+    }
+  }
+
+  // footer section in the portfolio
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+    .copyright{
+        display: flex;
+        justify-content: center;
+    }
+}

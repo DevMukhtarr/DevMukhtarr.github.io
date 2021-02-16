@@ -1,32 +1,126 @@
-@font-face{
-    font-family: Goldman;
-    src: url('../fonts/Goldman-Regular.ttf');
+@font-face {
+  font-family: Goldman;
+  src: url("../fonts/Goldman-Regular.ttf");
 }
-.body--about{
-    display: flex;
+
+body {
+  background-color: #222;
 }
-.my-intro{
-    position: relative;
-    font-family: Goldman;
-    width: 50px;
-    left: 80%;
+
+#container {
+  max-width: 1024px;
+  margin: 0;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
 }
-.color-change{
-    color: white;
+
+#monitor {
+  background: #000;
+  margin: 5%;
+  padding: 2% 2% 4% 2%;
+  border-radius: 10px;
+  border-bottom-left-radius: 50% 2%;
+  border-bottom-right-radius: 50% 2%;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
 }
-@media only screen and (max-width:280px){
-    .my-intro{
-        position: relative;
-        font-family: Goldman;
-        width: 50px;
-        left: 38%;
+
+#monitor:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: silver;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 3px 0 white;
+          box-shadow: 0 0 3px 0 white;
+}
+
+#monitorscreen {
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+@media all and (max-width: 960px) {
+  #container {
+    max-width: 1024px;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+@media all and (min-width: 960px) {
+  #monitor {
+    -webkit-animation: tvflicker .2s infinite alternate;
+    animation: tvflicker .5s infinite alternate;
+  }
+  @-webkit-keyframes tvflicker {
+    0% {
+      -webkit-box-shadow: 0 0 100px 0 rgba(200, 235, 255, 0.4);
+              box-shadow: 0 0 100px 0 rgba(200, 235, 255, 0.4);
     }
-}
-@media only screen and (max-width:800px){
-    .my-intro{
-        position: relative;
-        font-family: Goldman;
-        width: 50px;
-        left: 47%;
+    100% {
+      -webkit-box-shadow: 0 0 95px 0 rgba(200, 230, 255, 0.45);
+              box-shadow: 0 0 95px 0 rgba(200, 230, 255, 0.45);
     }
+  }
+  @keyframes tvflicker {
+    0% {
+      -webkit-box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+              box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+              box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
 }
+
+#container #monitor #monitorscreen {
+  text-align: center;
+}
+
+#container #monitor #monitorscreen p {
+  font-family: Goldman;
+  color: #351a02;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 120%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1.5%;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=body.css.map */
