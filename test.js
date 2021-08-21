@@ -1,5 +1,5 @@
 let menu = document.querySelector('.menu--items--mobile');
-let intro = "Hello, I am Abdulfatai Mukhtar a backend engineer.";
+let intro = "Hello, I am Abdulfatai Mukhtar a backend developer.";
 let introDiv = document.querySelector('.my-intro');
 let bar = document.querySelector('.fa-bars')
 let i = 0;
